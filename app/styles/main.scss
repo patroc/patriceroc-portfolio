@@ -1,0 +1,196 @@
+/*****************************************************************************
+  patriceroc
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+// Visual Grids Details 
+$grid-columns: 12 ;
+$visual-grid: true ;
+$visual-grid-color: lightblue;
+
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+main {
+	// @include outer-container;
+	color: white;
+	font-familly: 
+}
+
+li {
+	list-style-type: none;
+
+}
+
+ul {
+	padding:0;
+	display:inline-block;
+}
+
+.section {
+	display: block;
+	height:em(800);
+	width:100%;
+}
+
+// .content {
+
+// 	@include outer-container;
+// 		@include span-columns (12);
+// }
+
+
+
+// ******************* 
+//Media Queries links 
+//********************
+
+// $small: new-breakpoint (min-width 680px max-width 949px);
+// $medium: new-breakpoint (min-width 950px max-width 1199px);
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+
+// .nav-container{
+// @include outer-container;
+// @include span-columns (6);
+// }
+
+
+.nav-container {
+	position:fixed;
+	top:0;
+	width: 100%;
+	height:em(130);
+	overflow: auto;
+	background-color:#0E74FF;
+	z-index: 9;
+
+}
+
+.nav {
+	width:40%;
+	display:block;
+	margin: 0 auto;
+	text-align:center;
+	line-height:em(130);
+
+}
+
+.links {
+	display:inline-block;
+	margin: 0 em(10px) 0;
+}
+
+.nav-links {
+	text-decoration:none;
+	color:white;
+}
+
+.links {
+}
+
+
+.intro { 
+	background-color:#00E8E5;
+	margin-top:em(130);
+}
+
+.work { 
+	background-color:#00FF5A;
+}
+
+.about { 
+	background-color:#E89214;
+}
+
+.contact { 
+	background-color:black;
+}
+
+
+
+.intro-container {
+	@include outer-container;
+	background-color: red;
+	height: em(400);
+	position: relative;
+	top: em(200);
+}
+
+.work-container {
+	@include outer-container;
+	background-color: red;
+	height: em(400);
+	position: relative;
+	top: em(200);
+}
+
+.contact-container {
+	@include outer-container;
+	background-color: red;
+	height: em(400);
+	position: relative;
+	top: em(200);
+}
+
+.about-container {
+	@include outer-container;
+	background-color: red;
+	height: em(400);
+	position: relative;
+	top: em(200);
+}
+
+// .element {
+//   @include span-columns(6);
+
+//  .nested-element {
+//    @include span-columns(2 of 6);
+//  }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
