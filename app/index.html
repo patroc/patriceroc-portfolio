@@ -7,8 +7,12 @@
 
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css">
-
     <!-- endbuild -->
+
+   <!-- slick nav pluggin here  -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/slicknav/scss/slicknav.scss">
+    <!-- end of slick nav pluggin -->
+    
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -18,41 +22,55 @@
   <body>
     <main>
       <div class="main-header">
-        <div class="nav-container">
+        <nav class="nav-container">
           <ul class="nav">
-            <li class="links"<a class="nav-links" href="#intro">intro</a></li>
+            <li class="links"><a class="nav-links" href="#intro">intro</a></li>
             <li class="links"><a class="nav-links" href="#work">work</a></li>
             <li class="links"><a class="nav-links" href="#about">about me</a></li>
             <li class="links"><a class="nav-links" href="#contact">contact</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
 
-      <div class="section intro">
+      <div class="section intro"><a name="intro" class="page-anchor">MAGNET-TEXT</a>
         <div class="content intro-container">
-          <a name="intro">THIS IS THE INTRO SECTION</a>
+          <p>
+          Patrice Roc is a graphic designer born and raised in Haiti and currently based in Toronto. With a fervent interest in the world of art and design, Roc completed the 'infographisme' course at College Ahuntsic and eventually went on to procure full-time and freelance design work for a number of organizations ranging from event to pharmaceutical companies.
+          </p>
+          <p>
+          Driven by his interests in film and music, Roc has worked on a number of products such as posters, flyers, brochures, invitations, business cards, CD covers and other promotional material related to the exhibition of music and film work. 
+ 
+          Most recently, Roc has expanded his area of expertise to include web design and has successfully completed a number of websites for charity projects in his hometown, Port-au-Prince as well as for companies marketing green technology. 
+ 
+          When not working on a new design project, Roc spends his time composing and producing commissioned soundtracks for short and feature-length films as a personal hobby.
+          </p>
         </div>
       </div>
-      <div class="section work">
+      <div class="section work"><a name="work" class="page-anchor">MAGNET-TEXT</a>
         <div class="content work-container">
-          <a name="work">THIS IS THE WORK SECTION</a>
+          <p>THIS IS THE WORK SECTION</p>
         </div>
       </div>
-      <div class="section contact">
-         <div class="content contact-container">
-           <a name="contact"></a>
-         </div>
+      <div class="section about"><a name="about" class="page-anchor">MAGNET-TEXT</a>
+        <div class="content about-container">
+          <p>THIS IS THE ABOUT SECTION</p>
+        </div>
       </div>
-      <div class="section about">
-          <div class="content about-container">
-        <a name="about"></a>
+      <div class="section contact"><a name="contact" class="page-anchor">MAGNET-TEXT</a>
+        <div class="content contact-container">
+           <p>THIS IS THE CONTACT SECTION</p>
+        </div>
       </div>
 
      </main>  
         <!-- build:js scripts/main.js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+          <!-- endbuild -->
+        <!-- slick nav script -->
+        <script src="../bower_components/slicknav/dist/jquery.slicknav.js"></script>
+        <!-- end slick nav script  -->
+      
 
   </body>
 

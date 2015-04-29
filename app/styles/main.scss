@@ -6,10 +6,12 @@
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 // Visual Grids Details 
 $grid-columns: 12 ;
-$visual-grid: true ;
+$visual-grid: false ;
 $visual-grid-color: lightblue;
 
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
 
 
 
@@ -25,7 +27,10 @@ $visual-grid-color: lightblue;
 main {
 	// @include outer-container;
 	color: white;
-	font-familly: 
+	font-family: Oswald, Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+	letter-spacing: .08em;
+	line-height: 1.5em;
+	text-align: justify; 
 }
 
 li {
@@ -40,9 +45,24 @@ ul {
 
 .section {
 	display: block;
-	height:em(800);
+	min-height: em(800);
+	overflow: auto;
 	width:100%;
 }
+
+.page-anchor {
+	
+	padding: 0;
+	margin-top:0;
+	opacity: 0;
+}
+
+// p {
+// 	// font-family: Oswald, Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+// 	letter-spacing: .08em;
+// 	line-height: 1.5em;
+// 	text-align: justify;
+// }
 
 // .content {
 
@@ -85,7 +105,7 @@ ul {
 	width: 100%;
 	height:em(130);
 	overflow: auto;
-	background-color:#0E74FF;
+	background-color: rgba(67,110,127,0.8);
 	z-index: 9;
 
 }
@@ -114,55 +134,65 @@ ul {
 
 
 .intro { 
-	background-color:#00E8E5;
+	background-color:#2EC4FF;
 	margin-top:em(130);
 }
 
 .work { 
-	background-color:#00FF5A;
-}
-
-.about { 
-	background-color:#E89214;
+	background-color:#00B6FF;
 }
 
 .contact { 
-	background-color:#00FFD7;
+	background-color:#0092CC;
 }
+
+.about { 
+	background-color:#436E7F;
+}
+
+
 
 
 
 .intro-container {
 	@include outer-container;
-	background-color: red;
-	height: em(400);
+	background-color:rgba(67,110,127,0.3);
+	min-height: em(400);
+	overflow: auto;
 	position: relative;
 	top: em(200);
+	padding: em(20);
+	
 }
 
 .work-container {
 	@include outer-container;
-	background-color: red;
-	height: em(400);
-	position: relative;
-	top: em(200);
-}
-
-.contact-container {
-	@include outer-container;
-	background-color: red;
-	height: em(400);
+	background-color:rgba(67,110,127,0.3);
+	min-height: em(400);
+	overflow: auto;
 	position: relative;
 	top: em(200);
 }
 
 .about-container {
 	@include outer-container;
-	background-color: red;
-	height: em(400);
+	background-color: rgba(0,0,0,0.1);
+	min-height: em(400);
+	overflow: auto;
 	position: relative;
 	top: em(200);
 }
+
+.contact-container {
+	@include outer-container;
+	background-color:rgba(67,110,127,0.3);
+	min-height: em(400);
+	overflow: auto;
+	position: relative;
+	top: em(200);
+}
+
+
 
 // .element {
 //   @include span-columns(6);
