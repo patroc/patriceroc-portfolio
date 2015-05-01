@@ -3,9 +3,16 @@
 (function($) {
   $(document).ready(function() {
 
-	$(function(){
-		$('#menu').slicknav();
-	});
+$('#intro-anchor').scrollTo();
+$('#work-anchor').scrollTo();
+$('#about-anchor').scrollTo();
+$('#contact-anchor').scrollTo();
+
+// $('.img-holder').imageScroll();
+$('.img-holder').imageScroll({
+    coverRatio: 0.6
+});
 
   });
+
 })(jQuery);

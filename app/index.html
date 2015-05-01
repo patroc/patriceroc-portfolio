@@ -23,18 +23,58 @@
     <main>
       <div class="main-header">
         <nav class="nav-container">
-          <ul class="nav">
-            <li class="links"><a class="nav-links" href="#intro">intro</a></li>
-            <li class="links"><a class="nav-links" href="#work">work</a></li>
-            <li class="links"><a class="nav-links" href="#about">about me</a></li>
-            <li class="links"><a class="nav-links" href="#contact">contact</a></li>
+          <ul class="nav" >
+            <li class="links"><a class="nav-links" href="#intro" id="intro-anchor">intro</a></li>
+            <li class="links"><a class="nav-links" href="#work" id="work-anchor">work</a></li>
+            <li class="links"><a class="nav-links" href="#about" id="about-anchor">about</a></li>
+            <li class="links"><a class="nav-links" href="#contact" id="contact-anchor">contact</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="section intro"><a name="intro" class="page-anchor">MAGNET-TEXT</a>
+
+<!--parallax image start -->
+      <div class="img-holder" data-image="https://d13yacurqjgara.cloudfront.net/users/108482/screenshots/1355879/attachments/193117/Space-Desktop.jpg ">
+      </div> 
+<!--parallax image end -->
+
+      <section class="section intro"><a id="intro" class="page-anchor">MAGNET-TEXT</a>
         <div class="content intro-container">
-          <p>
+        INTRO
+        </div>
+      </section>
+      <section class="section work"><a id="work" class="page-anchor">MAGNET-TEXT</a>
+        <div class="content work-container">
+          <article class="news">
+        <h1>Title 1</h1>
+        <img src="http://lorempixel.com/g/200/200/">
+      </article><!-- 
+       --><article class="news">
+        <h1>Title 2</h1>
+         <img src="http://lorempixel.com/g/200/200/">
+      </article><!-- 
+       --><article class="news">
+        <h1>Title 3</h1>
+         <img src="http://lorempixel.com/g/200/200/">
+      </article><!-- 
+       --><article class="news">
+        <h1>Title 4</h1>
+        <img src="http://lorempixel.com/g/200/200/">
+      </article><!-- 
+       --><article class="news">
+        <h1>Title 5</h1>
+         <img src="http://lorempixel.com/g/200/200/">
+      </article><!-- 
+       --><article class="news">
+        <h1>Title 6</h1>
+        <img src="http://lorempixel.com/g/200/200/">
+      </article>
+
+        </div>
+      </section>
+      <section class="section about"><a id="about" class="page-anchor">MAGNET-TEXT</a>
+        <div class="content about-container">
+         <p>
           Patrice Roc is a graphic designer born and raised in Haiti and currently based in Toronto. With a fervent interest in the world of art and design, Roc completed the 'infographisme' course at College Ahuntsic and eventually went on to procure full-time and freelance design work for a number of organizations ranging from event to pharmaceutical companies.
           </p>
           <p>
@@ -45,31 +85,43 @@
           When not working on a new design project, Roc spends his time composing and producing commissioned soundtracks for short and feature-length films as a personal hobby.
           </p>
         </div>
-      </div>
-      <div class="section work"><a name="work" class="page-anchor">MAGNET-TEXT</a>
-        <div class="content work-container">
-          <p>THIS IS THE WORK SECTION</p>
-        </div>
-      </div>
-      <div class="section about"><a name="about" class="page-anchor">MAGNET-TEXT</a>
-        <div class="content about-container">
-          <p>THIS IS THE ABOUT SECTION</p>
-        </div>
-      </div>
-      <div class="section contact"><a name="contact" class="page-anchor">MAGNET-TEXT</a>
+      </section>
+      <section class="section contact"><a id="contact" class="page-anchor">MAGNET-TEXT</a>
         <div class="content contact-container">
            <p>THIS IS THE CONTACT SECTION</p>
         </div>
-      </div>
+      </section>
 
      </main>  
         <!-- build:js scripts/main.js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="scripts/main.js"></script>
+        <script src="../bower_components/jquery/jquery.js"></script>
+  
+          <!-- Scroll-To START  -->
+           <script src="../bower_components/Scroll-To/scrollTo.js"></script>
+          <!-- Scroll-To END -->
+
+          <!-- Scroll-To START  -->
+           <script src="../bower_components/Parallax-ImageScroll/jquery.imageScroll.js"></script>
+          <!-- Scroll-To END -->
+
+
+
+
+        <!-- THIS SCRIPT MUST RUN LAST !!! -->
+        <script src="scripts/main.js"></script> 
           <!-- endbuild -->
+
+
         <!-- slick nav script -->
-        <script src="../bower_components/slicknav/dist/jquery.slicknav.js"></script>
+       <!--  // <script src="../bower_components/slicknav/dist/jquery.slicknav.js"></script> -->
         <!-- end slick nav script  -->
+
+      
+     <!-- background image  -->
+<!-- https://d13yacurqjgara.cloudfront.net/users/108482/screenshots/1355879/attachments/193117/Space-Desktop.jpg -->
+<!-- background image end -->
+     
+
       
 
   </body>
